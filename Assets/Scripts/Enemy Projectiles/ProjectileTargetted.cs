@@ -31,7 +31,7 @@ public class ProjectileTargetted : MonoBehaviour
 
         if (transform.position.x == target.x && transform.position.y == target.y)
         {
-            DestroyProjectile();
+            Destroy(gameObject);
         }
 
 
@@ -43,14 +43,11 @@ public class ProjectileTargetted : MonoBehaviour
         //if projectile hits Player Object
         if (other.CompareTag("Player"))
         {
-            DestroyProjectile();
+            Debug.Log("hitplayer");
+            Destroy(gameObject);
         }
 
     }
 
-    void DestroyProjectile()
-    {
-        DestroyImmediate(gameObject);
-    }
 
 }
