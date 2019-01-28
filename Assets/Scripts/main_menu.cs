@@ -12,6 +12,7 @@ public class main_menu : MonoBehaviour {
     public Button _continue;
     public Button _gallery;
     public Button _quit;
+    private GameObject level1gen;
 
     // Use this for initialization
     void Start () {
@@ -30,7 +31,8 @@ public class main_menu : MonoBehaviour {
     {
         mainMenu.SetActive(false);
         level1.SetActive(true);
-
+        level1gen = GameObject.FindGameObjectWithTag("Level1Gen");
+        level1gen.GetComponent<spawning>().isActive = true;
     }
 
     public void Continue()
