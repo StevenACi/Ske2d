@@ -6,7 +6,7 @@ public class mm1 : MonoBehaviour {
 
     private float damage;
     private float speed = 10f;
-    private float lifespan = 100f;
+    private float lifespan = 40f;
 
 
 	// Use this for initialization
@@ -17,7 +17,7 @@ public class mm1 : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        lifespan -= 0.01f;
+        lifespan -= 1f;
         if (lifespan <= 0)
         {
             Destroy(gameObject);

@@ -43,6 +43,7 @@ public class ProjectileTargetted : MonoBehaviour
         //if projectile hits Player Object
         if (other.CompareTag("Player"))
         {
+            player.gameObject.GetComponent<status>().hp -= 1;
             Debug.Log("hitplayer");
             Destroy(gameObject);
         }
