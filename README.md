@@ -1,4 +1,4 @@
-# Ske2d
+
 This is a simple base for a danmaku style game. If you're unfamiliar with what that is, it is like Geometry wars, with RPG elements - at least this one is.
 
 So far we have a template for a character controlled sprite and one kind of enemy. //TODO: Extremely Abridged list:
